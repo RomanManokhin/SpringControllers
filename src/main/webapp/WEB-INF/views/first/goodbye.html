@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>GoodBye</title>
 </head>
 <body>
     GoodBye
-<a href="/first/hello.html">Say Hello</a> or
-<a href="/second/exit.html">Exit</a>
+
+<a href="/first/hello">Say goodbye</a> or <a href="/exit">Exit</a>
+or <a href="/first/goodbye?name=Tom&surname=Jone">Request with parameters</a>
+<!--получаем сообщение от Model-->
+<p th:text="${message}"/>
+
 </body>
 </html>
